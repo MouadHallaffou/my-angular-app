@@ -1,0 +1,8 @@
+<div *ngIf="dataList.length; else loading">
+  <ul>
+    <li *ngFor="let item of dataList">{{ item.id }} - {{ item.name }}</li>
+  </ul>
+</div>
+<ng-template #loading>
+  <p>Chargement...</p>
+</ng-template>
